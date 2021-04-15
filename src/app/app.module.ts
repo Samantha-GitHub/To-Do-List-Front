@@ -12,6 +12,7 @@ import { LoginComponent } from './components/login/login.component';
 import { Error404Component } from './components/error404/error404.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
+import { CreateUserComponent } from './components/user/create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './components/home/home.component';
     LoginComponent,
     Error404Component,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
