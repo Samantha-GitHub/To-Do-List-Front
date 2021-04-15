@@ -1,0 +1,15 @@
+*{
+    color: white;
+    line-height:50px;
+    background:black;
+    color:white;
+    text-align:center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: lightseagreen;
+}
