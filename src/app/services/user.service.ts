@@ -23,6 +23,13 @@ export class UserService {
       .toPromise();
   }
 
+  // GET BY ID FREELANCER
+  /*   getById(pId): Promise<User> {
+      const httpOptions = { headers: new HttpHeaders() };
+      return this.httpClient
+        .get<User>(`${this.baseUrl}/${pId}`, httpOptions)
+        .toPromise();
+    } */
 
   //GET BY ID TOKEN
 
