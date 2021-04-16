@@ -29,20 +29,38 @@
 
     <div class="container">
 
-        <table class="flat-table flat-table-1">
-            <thead>
-                <th>Task Title</th>
-                <th>Task Detail</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>test</td>
-                    <td>test</td>
-                </tr>
+        <body>
 
-            </tbody>
-        </table>
+            <form [formGroup]="formUser" (ngSubmit)="onSubmitFormUser()">
 
+                <fieldset>
+                    <legend><span class="number"><i class="fas fa-user-plus"></i></span>Sign Up</legend>
+
+                    <label for="name">First Name:</label>
+
+                    <input type="text" class="form-control " formControlName="firstname" id="firstname"
+                        name="user_name">
+
+
+                    <label for="name">Last Name:</label>
+
+                    <input type="text" class="form-control " formControlName="lastname" id="lastname" name="user_name">
+
+                    <label for="mail">Email:</label>
+
+                    <input class="form-control " formControlName="email" type="email" id="mail" name="user_email">
+
+                    <label for="password">Password:</label>
+
+                    <input class="form-control " type="password" id="password" name="user_password" disabled>
+
+
+                </fieldset>
+
+                <button type="submit" (click)="refresh()">Update</button>
+            </form>
+
+        </body>
 
     </div>
 
