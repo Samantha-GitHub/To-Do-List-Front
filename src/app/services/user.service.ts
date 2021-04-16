@@ -39,6 +39,14 @@ export class UserService {
     return this.httpClient.post<any>(this.baseUrl, formValues).toPromise();
   }
 
+  // UPDATE 
+
+  updateById(formValues): Promise<any> {
+    return this.httpClient
+      .put<any>(this.baseUrl, formValues, this.createHeaders())
+      .toPromise();
+  }
+
   //DELETE
 
   delete(): Promise<any> {
