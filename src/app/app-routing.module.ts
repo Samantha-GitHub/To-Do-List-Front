@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChoresComponent } from './components/chores/chores.component';
 import { Error404Component } from './components/error404/error404.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HomeComponent } from './components/home/home.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'hero', component: HeroComponent },
   { path: 'login', component: LoginComponent },
   { path: 'profile', component: UserComponent },
+  { path: 'myTasks', component: ChoresComponent },
   { path: 'createaccount', component: CreateUserComponent },
   { path: '**', component: Error404Component },
 ];
