@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Chores } from 'src/app/interfaces/chores';
+import { ChoresService } from 'src/app/services/chores.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  chores: Chores[];
 
-  ngOnInit(): void {
+  constructor(private choresService: ChoresService) {
+
+    this.chores = []
+  }
+
+  async ngOnInit() {
+
+    try {
+      this.chores = await this.choresService.getAll();
+    } catch (error) {
+      console.log(error);
+    }
+
+
   }
 
 }

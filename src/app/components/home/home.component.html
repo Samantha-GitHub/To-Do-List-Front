@@ -2,11 +2,46 @@
 
     <div id="navbar">
         <app-nav-bar></app-nav-bar>
+
+        <nav class="nav vertical">
+            <ul>
+                <li>
+                    <a [routerLink]="['/home']">
+                        <i class="left-menu-icon fas fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/profile']">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/myTasks']">
+                        <i class="left-menu-icon fas fa-bookmark"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+
     </div>
 
     <div class="container">
 
-        <p>aqui va mi texto</p>
+        <table class="flat-table flat-table-1">
+            <thead>
+                <th>Task Title</th>
+                <th>Task Detail</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let chore of chores">
+                    <td>{{chore.title}}</td>
+                    <td>{{chore.detail}}</td>
+                </tr>
+
+            </tbody>
+        </table>
 
 
     </div>
