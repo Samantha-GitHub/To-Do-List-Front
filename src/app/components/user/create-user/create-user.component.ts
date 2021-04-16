@@ -26,7 +26,7 @@ export class CreateUserComponent implements OnInit {
       ]),
       password: new FormControl('', [
         Validators.required,
-        Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,12}$/),
+        Validators.pattern(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,50}$/),
       ]),
 
     })

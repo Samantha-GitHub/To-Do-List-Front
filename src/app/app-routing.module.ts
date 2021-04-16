@@ -5,6 +5,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { CreateUserComponent } from './components/user/create-user/create-user.component';
+import { UserComponent } from './components/user/user.component';
 
 const routes: Routes = [
 
@@ -12,12 +13,13 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'hero', component: HeroComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'profile', component: UserComponent },
   { path: 'createaccount', component: CreateUserComponent },
   { path: '**', component: Error404Component },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
