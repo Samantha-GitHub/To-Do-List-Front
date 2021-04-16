@@ -1,22 +1,28 @@
 <body>
 
-    <form action="index.html" method="post">
+    <form [formGroup]="formUser" (ngSubmit)="onSubmitFormUser()">
 
         <fieldset>
             <legend><span class="number"><i class="fas fa-user-plus"></i></span>Sign Up</legend>
+
             <label for="name">First Name:</label>
-            <input type="text" id="name" name="user_name">
+
+            <input type="text" class="form-control " formControlName="firstname" id="name" name="user_name">
 
             <label for="name">Last Name:</label>
-            <input type="text" id="name" name="user_name">
+
+            <input type="text" class="form-control " formControlName="lastname" id="name" name="user_name">
 
             <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email">
+
+            <input class="form-control " formControlName="email" type="email" id="mail" name="user_email">
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="user_password">
+
+            <input class="form-control " formControlName="password" type="password" id="password" name="user_password">
 
         </fieldset>
+
         <button type="submit">Sign Up</button>
     </form>
 
