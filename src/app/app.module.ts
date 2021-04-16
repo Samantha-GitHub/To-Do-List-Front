@@ -13,6 +13,8 @@ import { Error404Component } from './components/error404/error404.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { CreateUserComponent } from './components/user/create-user/create-user.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,16 @@ import { CreateUserComponent } from './components/user/create-user/create-user.c
     Error404Component,
     ContactComponent,
     HomeComponent,
-    CreateUserComponent
+    CreateUserComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
