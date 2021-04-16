@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Chores } from 'src/app/interfaces/chores';
 import { User } from 'src/app/interfaces/user';
 import { UserService } from 'src/app/services/user.service';
 
@@ -12,6 +13,7 @@ export class UserComponent implements OnInit {
 
   user: User;
   formUser: FormGroup;
+  chores: Chores[];
 
   constructor(private userService: UserService
 
@@ -34,7 +36,8 @@ export class UserComponent implements OnInit {
 
     // Get info user by Id Token
     this.user = await this.userService.getById();
-    /* console.log('this is user', this.user); */
+    this.chores = this.user.chores;
+    console.log('this is user', this.user);
 
     // FORM CONTENT
 
