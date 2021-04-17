@@ -40,13 +40,7 @@ export class ChoresService {
       .post(this.baseUrl, formValues, this.createHeaders())
       .toPromise();
   }
-  /* 
-    // UPDATE 
-    updateByIdToken(formValues): Promise<any> {
-      return this.httpClient
-        .put<any>(this.baseUrl, formValues, this.createHeaders())
-        .toPromise();
-    } */
+
 
   // UPDATE 
   updateByIdToken(taskId, formValues): Promise<any> {
@@ -57,7 +51,7 @@ export class ChoresService {
 
   // DELETE 
   deleteByIdToken(idChore): Promise<any> {
-    console.log('log del idChore', idChore);
+    /* console.log('log del idChore', idChore); */
 
     return this.httpClient
       .delete<any>(`${this.baseUrl}/${idChore}`, this.createHeaders())
