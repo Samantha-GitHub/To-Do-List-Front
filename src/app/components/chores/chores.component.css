@@ -100,17 +100,17 @@ nav.vertical:hover::after {
 
 /* Fin sidebar */
 
-/* Start */
+/* Start Table*/
 
 .flat-table {
-  width: 100%;
+  width: 95%;
 		margin-bottom: 20px;
 		border-collapse:collapse;
 		font-family: 'Lato', Calibri, Arial, sans-serif;
 		border: none;
-                border-radius: 3px;
-               -webkit-border-radius: 3px;
-               -moz-border-radius: 3px;
+    border-radius: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
 	}
   td{
     text-align: center;
@@ -140,7 +140,32 @@ nav.vertical:hover::after {
 	}
 	.flat-table-1 {
 		background: lightcoral;
+   
 	}
 	.flat-table-1 tr:hover {
 		background: rgba(0,0,0,0.19);
 	}
+
+  /* END */
+
+  .button{
+    padding: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .button:hover{
+    background-color: lightsalmon;
+    color: white;
+  }
+
+  .delete{
+    color: red;
+ 
+  }
+
+  .update{
+    color: green;
+   
+  }

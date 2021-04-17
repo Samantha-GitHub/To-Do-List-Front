@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Chores } from 'src/app/interfaces/chores';
+import { User } from 'src/app/interfaces/user';
+import { UserService } from 'src/app/services/user.service';
+import { ChoresService } from 'src/app/services/chores.service';
+
+declare var Swal;
+
 
 @Component({
   selector: 'app-chores',
@@ -6,10 +14,73 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chores.component.css']
 })
 export class ChoresComponent implements OnInit {
+  formChores: FormGroup;
+  user: User;
+  chores: Chores[];
 
-  constructor() { }
+  constructor(private userService: UserService, private choreService: ChoresService,
+  ) {
+    this.formChores = new FormGroup({
 
-  ngOnInit(): void {
+      title: new FormControl('', [Validators.required]),
+      detail: new FormControl('', [Validators.required]),
+
+    })
   }
 
+  async ngOnInit() {
+
+    // Get info user by Id Token
+    this.user = await this.userService.getById();
+    this.chores = this.user.chores;
+    console.log('this is user', this.user);
+  }
+
+  async onSubmitChores(): Promise<any> {
+
+    /*  try {
+ 
+       const chore = await this.choreService.create(
+         this.formChores.value
+       );
+       console.log(chore);
+ 
+     } catch (error) {
+       console.log(error);
+     } */
+
+    const chore = await this.choreService.create(
+      this.formChores.value
+    );
+    console.log(chore);
+
+  }
+
+  deleteTask(choreId) {
+    Swal.fire({
+      title: 'Are you sure you want to delete that task?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!',
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        const deleteTask = await this.choreService.deleteByIdToken(
+          choreId
+        );
+        window.location.reload();
+        console.log(deleteTask);
+        Swal.fire('Deleted!', 'Your file has been deleted.', 'success');
+      }
+    });
+    /*    const deleteTask = this.choreService.deleteByIdToken(choreId);
+       console.log(deleteTask); */
+
+
+  }
+  refresh(): void {
+    window.location.reload();
+  }
 }

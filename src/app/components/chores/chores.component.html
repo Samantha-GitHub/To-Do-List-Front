@@ -29,19 +29,55 @@
 
     <div class="container">
 
-        <table class="flat-table flat-table-1">
-            <thead>
-                <th>Task Title</th>
-                <th>Task Detail</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Aqui iran las taks by id</td>
-                    <td>Aqui iran las taks by id</td>
-                </tr>
+        <form [formGroup]="formChores" (ngSubmit)="onSubmitChores()">
 
-            </tbody>
-        </table>
+            <fieldset>
+                <legend><span class="number"><i class="fas fa-user-plus"></i></span>Add New Tasks</legend>
+
+                <label for="title">Title</label>
+
+                <input type="text" class="form-control " formControlName="title">
+
+
+                <label for="detail">Detail</label>
+
+                <input type="text" class="form-control " formControlName="detail">
+
+            </fieldset>
+
+            <button type="submit">Create</button>
+        </form>
+
+        <div class="myTasks">
+
+            <h1>My tasks published</h1>
+
+            <table class="flat-table flat-table-1">
+                <thead>
+                    <th>Task Title</th>
+                    <th>Task Detail</th>
+                    <th>Delete / Update</th>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let chore of chores">
+                        <td>{{chore.title}}</td>
+                        <td>{{chore.detail}}</td>
+                        <td>
+                            <button (click)="deleteTask(chore.id)" class="button">
+                                <i class="fas fa-trash-alt delete"></i>
+                            </button>
+                            <button class="button">
+                                <i class="fas fa-check update"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
 
 
     </div>

@@ -25,11 +25,11 @@ export class ChoresService {
 
   //GET BY ID USER
 
-  getChoresByUserId(pId): Promise<Chores> {
+  getChoresByUserId(pId): Promise<Chores[]> {
     const httpOptions = { headers: new HttpHeaders() };
 
     return this.httpClient
-      .get<Chores>(`${this.baseUrl}/${pId}`, httpOptions)
+      .get<Chores[]>(`${this.baseUrl}/profile`, httpOptions)
       .toPromise();
   }
 
@@ -49,9 +49,11 @@ export class ChoresService {
   }
 
   // DELETE 
-  deleteByIdToken(): Promise<any> {
+  deleteByIdToken(idChore): Promise<any> {
+    console.log('log del idChore', idChore);
+
     return this.httpClient
-      .put<any>(`${this.baseUrl}`, this.createHeaders())
+      .delete<any>(`${this.baseUrl}/${idChore}`, this.createHeaders())
       .toPromise();
   }
 
