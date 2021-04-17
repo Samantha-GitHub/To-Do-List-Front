@@ -75,13 +75,13 @@ export class ChoresComponent implements OnInit {
         const deleteTask = await this.choreService.deleteByIdToken(
           choreId
         );
-        window.location.reload();
         console.log(deleteTask);
         Swal.fire('Deleted!', 'Your file has been deleted.', 'success');
+
+        window.location.reload();
       }
     });
-    /*    const deleteTask = this.choreService.deleteByIdToken(choreId);
-       console.log(deleteTask); */
+
 
 
   }

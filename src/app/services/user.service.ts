@@ -57,8 +57,10 @@ export class UserService {
   //DELETE
 
   delete(): Promise<any> {
+
+
     return this.httpClient
-      .put<any>(`${this.baseUrl}`, this.createHeaders())
+      .delete<any>(`${this.baseUrl}`, this.createHeaders())
       .toPromise();
   }
 
@@ -66,9 +68,9 @@ export class UserService {
   //HEADERS
 
   createHeaders() {
+
     return {
       headers: new HttpHeaders({
-        // 'Content-Type': 'application/json',
         authorization: localStorage.getItem('to-do-list'),
       }),
     };
