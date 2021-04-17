@@ -10,7 +10,8 @@ export class ChoresService {
   baseUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.baseUrl = 'https://to-do-list-express-node-mysql.herokuapp.com/api/chores'
+/*     this.baseUrl = 'https://to-do-list-express-node-mysql.herokuapp.com/api/chores'
+ */    this.baseUrl = 'http://localhost:3000/api/chores'
   }
 
   //GET ALL
