@@ -50,6 +50,8 @@ export class EditChoreComponent implements OnInit {
       );
       console.log(chore);
 
+      this.router.navigate(['/myTasks']);
+
     } catch (error) {
       console.log(error);
     }
