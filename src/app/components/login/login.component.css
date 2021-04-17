@@ -111,7 +111,9 @@ body {
 
     :-ms-input-placeholder { color: lightcoral; }
     
-    @media (max-width: 600px) {
+    @media (max-width: 575px) {
         .main {
             border-radius: 0px;
+            width: 300px;
         }}
+
