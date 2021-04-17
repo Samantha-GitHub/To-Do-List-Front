@@ -3,6 +3,7 @@
   padding:0;
   height:100%;
    background-color: #ef626b25;
+   position: relative;
 
 }
 
@@ -243,3 +244,113 @@ p{
   }
 
 }
+
+@media screen and (max-width: 575px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #page{
+    position: relative;
+  }
+  .vertical{
+
+    display: none;
+  }
+
+  .body{
+    margin-bottom: 90px;
+  }
+
+  .container{
+   width: 100%;        
+  }
+
+  h1{
+
+    font-size: 1.5em;
+  }
+
+  table{
+
+    font-size: 0.9em;
+  }
+
+  .button{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+               
+}
+
+@media screen and (max-width: 767px) and (min-width:576px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    #page{
+    position: relative;
+  }
+
+  .vertical{
+
+    display: none;
+  }
+
+    .body{
+    margin-bottom: 90px;
+  }
+
+  .container{
+   width: 100%;        
+  }
+
+  .button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 991px) and (min-width:768px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    #page{
+    position: relative;
+  }
+
+  .body{
+    margin-bottom: 100px;
+  }
+
+  .container{
+   width: 70%;        
+  } 
+
+  .button{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 5px;
+  }
+
+}
+
+
+
+
+
+
+
+  

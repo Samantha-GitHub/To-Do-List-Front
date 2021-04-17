@@ -4,6 +4,7 @@
   height:100%;
   width: 100%;
   background-color: #ef626b25;
+  position: relative;
 }
 
 #navbar {
