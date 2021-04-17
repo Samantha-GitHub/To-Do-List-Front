@@ -40,7 +40,8 @@
             <form [formGroup]="formUser" (ngSubmit)="onSubmitFormUser()">
 
                 <fieldset>
-                    <legend><span class="number"><i class="fas fa-user-plus"></i></span>Update Your Profile</legend>
+                    <legend><span class="number"><i class="fas fa-user-plus"></i></span>Update / Delete Your Profile
+                    </legend>
 
                     <label for="name">First Name:</label>
 
@@ -63,7 +64,9 @@
 
                 </fieldset>
 
-                <button type="submit" (click)="refresh()">Save</button>
+                <button type="submit" (click)="refresh()">Save Changes</button>
+
+                <button type="submit">Delete Account</button>
             </form>
 
         </body>
