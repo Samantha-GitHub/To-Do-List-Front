@@ -163,10 +163,114 @@ nav.vertical:hover::after {
 
   /* End Table */
 
- /*  @media (max-width: 575px) { 
+@media screen and (max-width: 575px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #page{
+    position: relative;
+  }
+  .vertical{
+
+    display: none;
+  }
+
+  .body{
+    margin-bottom: 90px;
+  }
+
+  .container{
+   width: 100%;        
+  }
+
+  h1{
+
+    font-size: 1.5em;
+  }
+
+  table{
+
+    font-size: 0.9em;
+  }
+               
+}
+
+@media screen and (max-width: 767px) and (min-width:576px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    #page{
+    position: relative;
+  }
+
+  .vertical{
+
+    display: none;
+  }
+
+    .body{
+    margin-bottom: 90px;
+  }
+
+  .container{
+   width: 100%;        
+  }
+
+  h1{
+
+    font-size: 1.5em;
+  }
+
+  table{
+
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 991px) and (min-width:768px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    #page{
+    position: relative;
+  }
+
+  .body{
+    margin-bottom: 100px;
+  }
+
+  .container{
+   width: 70%;        
+  }
+
+  h1{
+
+    font-size: 1.5em;
+  }
+
+  table{
+
+    font-size: 0.9em;
+  }
+
+}
 
 
-  } */
+
+
+
 
 
   
