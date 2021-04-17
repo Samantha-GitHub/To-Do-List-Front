@@ -45,12 +45,12 @@
 
             </fieldset>
 
-            <button type="submit">Create</button>
+            <button class="btn_create" type="submit">Create</button>
         </form>
 
         <div class="myTasks">
 
-            <h1>My tasks published</h1>
+            <h1>Edit tasks published</h1>
 
             <table class="flat-table flat-table-1">
                 <thead>
@@ -60,7 +60,7 @@
 
                 </thead>
                 <tbody>
-                    <tr *ngFor="let chore of chores">
+                    <tr *ngFor="let chore of chores | paginate: { itemsPerPage: 2, currentPage: page}">
                         <td>{{chore.title}}</td>
                         <td>{{chore.detail}}</td>
                         <td>
@@ -79,6 +79,9 @@
 
 
             </table>
+            <pagination-controls class="pagination" (pageChange)="page = $event" responsive=" true"
+                previousLabel="Previous" nextLabel="Next">
+            </pagination-controls>
 
         </div>
 

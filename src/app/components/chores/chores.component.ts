@@ -15,6 +15,9 @@ declare var Swal;
   styleUrls: ['./chores.component.css']
 })
 export class ChoresComponent implements OnInit {
+
+  public page: number;
+
   formChores: FormGroup;
   user: User;
   chores: Chores[];
