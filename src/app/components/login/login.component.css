@@ -1,5 +1,5 @@
 body {
-        background-color: #F3EBF6;
+        background-color: rgba(212, 161, 94, 0.589);
         width: 100%;
         height: 100vh;
         position: relative;
@@ -21,7 +21,7 @@ body {
     
     .sign {
         padding-top: 40px;
-        color: #8C55AA;
+        color: lightcoral;
         font-weight: bold;
         font-size: 23px;
     }
@@ -34,7 +34,7 @@ body {
     letter-spacing: 1px;
     background: rgba(136, 126, 126, 0.04);
     padding: 10px 20px;
-    border: none;
+    border: 3px solid black;
     border-radius: 20px;
     outline: none;
     box-sizing: border-box;
@@ -51,14 +51,14 @@ body {
     }
     
     .pass {
-            width: 76%;
+    width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
     background: rgba(136, 126, 126, 0.04);
     padding: 10px 20px;
-    border: none;
+    border: 1px solid black;
     border-radius: 20px;
     outline: none;
     box-sizing: border-box;
@@ -79,8 +79,8 @@ body {
     .submit {
       cursor: pointer;
         border-radius: 5em;
-        color: #fff;
-        background: linear-gradient(to right, #9C27B0, #E040FB);
+        color: #fff; 
+        background-color: lightcoral;
         border: 0;
         padding-left: 40px;
         padding-right: 40px;
@@ -93,15 +93,23 @@ body {
     
     .forgot {
         text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-        color: #E1BEE7;
+        color: lightcoral;
         margin-top: 30px;
     }
     
     a {
         text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-        color: #E1BEE7;
+        color: lightcoral;
         text-decoration: none
     }
+
+    ::-webkit-input-placeholder { color: lightcoral; } 
+
+    :-moz-placeholder { /* Firefox 18- */ color: lightcoral; } 
+
+    ::-moz-placeholder { /* Firefox 19+ */ color: lightcoral; } 
+
+    :-ms-input-placeholder { color: lightcoral; }
     
     @media (max-width: 600px) {
         .main {
