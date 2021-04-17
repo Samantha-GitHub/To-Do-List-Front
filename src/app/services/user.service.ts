@@ -10,9 +10,9 @@ export class UserService {
   baseUrl: string;
 
   constructor(private httpClient: HttpClient) {
-/*     this.baseUrl = 'https://to-do-list-express-node-mysql.herokuapp.com/api/user';
- */    this.baseUrl = 'http://localhost:3000/api/user';
-  }
+    this.baseUrl = 'https://to-do-list-express-node-mysql.herokuapp.com/api/user';
+/*     this.baseUrl = 'http://localhost:3000/api/user';
+ */  }
 
   //GET ALL
 
