@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  color: #384047;
 }
 
 form {
@@ -31,10 +30,8 @@ input[type="number"],
 input[type="search"],
 input[type="tel"],
 input[type="time"],
-input[type="url"],
-textarea,
-select {
-  background: rgba(255,255,255,0.1);
+input[type="url"]
+{
   border: none;
   font-size: 16px;
   height: auto;
@@ -44,38 +41,24 @@ select {
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 5px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-}
-
-select {
-  padding: 6px;
-  height: 32px;
-  border-radius: 2px;
 }
 
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: lightcoral;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
 button:hover{
-    background-color: #047c28d3;
+    background-color: rgba(240, 128, 128, 0.705);
 
 }
 
@@ -100,7 +83,7 @@ label.light {
 }
 
 .number {
-  background-color: #5fcf80;
+  background-color: lightcoral;
   color: #fff;
   height: 35px;
   width: 35px;
@@ -109,7 +92,6 @@ label.light {
   margin-right: 4px;
   line-height: 30px;
   text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
   border-radius: 100%;
 }
 
@@ -118,6 +100,7 @@ p{
   font-size: 0.6em;
   padding-bottom: 40px;
 }
+
 @media screen and (min-width: 480px) {
 
   form {
