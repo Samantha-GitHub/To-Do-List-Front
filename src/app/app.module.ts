@@ -16,6 +16,7 @@ import { CreateUserComponent } from './components/user/create-user/create-user.c
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditChoreComponent } from './components/chores/edit-chore/edit-chore.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,8 @@ import { EditChoreComponent } from './components/chores/edit-chore/edit-chore.co
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    NgxPaginationModule,
+
 
   ],
   providers: [],

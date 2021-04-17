@@ -12,6 +12,9 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class HomeComponent implements OnInit {
 
+  public page: number;
+  public page1: number;
+
   chores: Chores[];
   choresById: Chores[];
   user: User;

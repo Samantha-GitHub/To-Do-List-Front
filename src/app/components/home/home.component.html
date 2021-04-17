@@ -50,7 +50,7 @@
                     <th>Task Detail</th>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let chore of chores">
+                    <tr *ngFor="let chore of chores | paginate: { itemsPerPage: 4, currentPage: page }">
                         <td>{{chore.title}}</td>
                         <td class="detail">{{chore.detail}}</td>
                     </tr>
@@ -74,19 +74,23 @@
 
                 </thead>
                 <tbody>
-                    <tr *ngFor="let chores of choresById">
+                    <tr *ngFor="let chores of choresById | paginate: { itemsPerPage: 4, currentPage: page }">
                         <td>{{chores.title}}</td>
                         <td>{{chores.detail}}</td>
                     </tr>
 
                 </tbody>
             </table>
+
         </div>
 
 
+        <pagination-controls class="pagination" (pageChange)="page = $event" responsive=" true" previousLabel="Previous"
+            nextLabel="Next">
+        </pagination-controls>
+        <div id="footer">
+            <app-footer></app-footer>
+        </div>
     </div>
 
-    <div id="footer">
-        <app-footer></app-footer>
-    </div>
 </div>
