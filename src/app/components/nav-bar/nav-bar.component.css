@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 1.5em;
   color: lightcoral;
 }
 
@@ -64,4 +64,120 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 575px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav{
+
+    width: 80%;
+  }
+
+        figure{
+          display: none;
+        }
+        .logo-containe{
+          flex:3;
+        }
+        .logo{
+          font-size: 1em;
+        }
+
+        small{
+          display: none;
+        }
+
+        .menu-container{
+
+          
+        flex: 5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+        
+}
+
+@media screen and (max-width: 767px) and (min-width:576px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+        figure{
+          display: none;
+        }
+        .logo-containe{
+          flex: 4
+        }
+        .logo{
+          font-size: 1.5em;
+        }
+
+        small{
+          display: none;
+        }
+
+        .menu-container{
+
+          
+        flex: 4;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+        
+}
+
+@media (max-width: 991px) and (min-width:768px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+        figure{
+          display: none;
+        }
+        .logo-containe{
+          flex: 4
+        }
+        .logo{
+          font-size: 1.9em;
+        }
+
+        .menu-container{
+
+          
+        flex: 9;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      .profile-container{
+        flex:5
+      }
+
+        
+}
+
+@media screen and (max-width: 1199px) and (min-width:992px){
+
+.icon{
+  display: none;
+}
+}
+
+
 

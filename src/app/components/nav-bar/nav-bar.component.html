@@ -6,8 +6,12 @@
         <div class="menu-container">
 
             <ul class="menu-list">
-                <li routerLink="/home" class="menu-list-item">Home</li>
-                <li routerLink="/myTasks" class="menu-list-item">My Tasks</li>
+                <li routerLink="/home" class="menu-list-item "><i
+                        class=" icon left-menu-icon fas fa-home"></i><small>Home</small> </li>
+                <li routerLink="/myTasks" class="menu-list-item"><i class="icon left-menu-icon fas fa-bookmark"></i>
+                    <small>My Tasks</small>
+
+                </li>
             </ul>
         </div>
         <div class="profile-container">
@@ -17,11 +21,14 @@
             </figure>
 
             <div class="profile-text-container">
-                <span class="profile-text" routerLink="/profile">Profile</span>
+                <span class="profile-text" routerLink="/profile"><i class="icon fas fa-user"></i><small>Profile</small>
+                </span>
             </div>
 
             <div class="profile-text-container">
-                <a (click)="logOut()" class="profile-text"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                <a (click)="logOut()" class="profile-text"><i class="icon fas fa-sign-out-alt"></i><small>Log
+                        Out</small>
+                </a>
             </div>
 
         </div>
