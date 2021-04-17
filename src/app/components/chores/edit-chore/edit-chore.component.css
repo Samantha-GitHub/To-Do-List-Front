@@ -2,7 +2,8 @@
   margin:0;
   padding:0;
   height:100%;
- /*  background-color: #ef626b48; */
+  background-color: #ef626b25;
+
 }
 
 #navbar {
@@ -39,8 +40,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-    background-color: #ef626b48;
     border-radius: 8%;
+    margin-bottom: 180px;
+ 
 
 }
 
@@ -121,6 +123,7 @@ form {
   padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
+     border: 1px solid rgba(0, 0, 0, 0.534);
 }
 
 h1 {
