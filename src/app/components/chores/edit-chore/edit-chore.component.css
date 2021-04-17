@@ -26,7 +26,7 @@
   width:100%;
 }
 
-/* Aqui va la sidebar*/
+/* Here goes the sidebar*/
 
 * {
   padding: 0;
@@ -171,7 +171,7 @@ select {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: lightcoral;
   font-size: 18px;
   text-align: center;
   font-style: normal;
@@ -184,7 +184,7 @@ button {
 }
 
 button:hover{
-    background-color: #047c28d3;
+    background-color: green;
 
 }
 
@@ -209,7 +209,7 @@ label.light {
 }
 
 .number {
-  background-color: #5fcf80;
+  background-color: lightcoral;
   color: #fff;
   height: 35px;
   width: 35px;
@@ -234,3 +234,61 @@ p{
   }
 
 }
+
+@media screen and (max-width: 575px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #page{
+    position: relative;
+  }
+  .vertical{
+
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width:576px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    #page{
+    position: relative;
+  }
+
+  .vertical{
+
+    display: none;
+  }
+
+}
+
+@media (max-width: 991px) and (min-width:768px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    #page{
+    position: relative;
+  }
+
+}
+
+
+
+
+
+
+
+  
