@@ -40,6 +40,7 @@ body {
 
 .menu-list-item {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .menu-list-item.active {
@@ -54,6 +55,7 @@ body {
 
 .profile-text-container {
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .profile-picture {
