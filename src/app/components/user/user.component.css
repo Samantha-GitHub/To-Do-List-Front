@@ -113,6 +113,7 @@ nav.vertical:hover::after {
 body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
+  margin-bottom: 15px;
 }
 
 form {

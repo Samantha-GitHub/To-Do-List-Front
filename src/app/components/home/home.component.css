@@ -28,6 +28,7 @@
 
 
 
+
 /* Here goes the sidebar*/
 
 * {
@@ -36,15 +37,9 @@
   box-sizing: border-box;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
+.body {
 
-  min-height: 100vh;
-  background: #EF626C;
-  color: #F6E8EA;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 80px;
 }
 
 h1{
