@@ -29,19 +29,60 @@
 
     <div class="container">
 
-        <table class="flat-table flat-table-1">
-            <thead>
-                <th>Task Title</th>
-                <th>Task Detail</th>
-            </thead>
-            <tbody>
-                <tr *ngFor="let chore of chores">
-                    <td>{{chore.title}}</td>
-                    <td class="detail">{{chore.detail}}</td>
-                </tr>
 
-            </tbody>
-        </table>
+
+
+        <div class="allTasks">
+
+            <h1>All tasks published</h1>
+
+            <table class="flat-table flat-table-1 ">
+                <thead>
+                    <th>Task Title</th>
+                    <th>Task Detail</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let chore of chores">
+                        <td>{{chore.title}}</td>
+                        <td class="detail">{{chore.detail}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+
+        <div class="myTasks">
+
+            <h1>My tasks published</h1>
+
+            <table class="flat-table flat-table-1">
+                <thead>
+                    <th>Task Title</th>
+                    <th>Task Detail</th>
+                    <th>Delete / Update</th>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor="let chores of choresById">
+                        <td>{{chores.title}}</td>
+                        <td>{{chores.detail}}</td>
+                        <td>
+                            <button class="button">
+                                <i class="fas fa-trash-alt delete"></i>
+                            </button>
+                            <button class="button">
+                                <i class="fas fa-check update"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
 
 
     </div>
