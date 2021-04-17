@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Chores } from 'src/app/interfaces/chores';
 import { User } from 'src/app/interfaces/user';
 import { ChoresService } from 'src/app/services/chores.service';
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   choresById: Chores[];
   user: User;
 
-  constructor(private choresService: ChoresService, private userService: UserService) {
+  constructor(private choresService: ChoresService, private userService: UserService, private router: Router) {
 
     this.chores = []
   }
@@ -32,10 +33,10 @@ export class HomeComponent implements OnInit {
     this.user = await this.userService.getById();
     this.choresById = this.user.chores;
     console.log('this is user', this.user);
-
-
-
-
   }
 
+  logOut() {
+    localStorage.removeItem('to-do-list');
+    this.router.navigate(['/hero']);
+  };
 }
