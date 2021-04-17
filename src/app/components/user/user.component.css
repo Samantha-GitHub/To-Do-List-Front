@@ -2,7 +2,8 @@
   margin:0;
   padding:0;
   height:100%;
- /*  background-color: #ef626b48; */
+   background-color: #ef626b25;
+
 }
 
 #navbar {
@@ -25,7 +26,7 @@
   width:100%;
 }
 
-/* Aqui va la sidebar*/
+/* Here goes the sidebar*/
 
 * {
   padding: 0;
@@ -39,8 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-    background-color: #ef626b48;
-    border-radius: 8%;
+  border-radius: 8%;
 
 }
 
@@ -121,6 +121,7 @@ form {
   padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
+  border: 1px solid lightcoral;
 }
 
 h1 {
@@ -168,7 +169,7 @@ select {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: lightcoral;
   font-size: 18px;
   text-align: center;
   font-style: normal;
@@ -181,7 +182,7 @@ button {
 }
 
 button:hover{
-    background-color: #047c28d3;
+    background-color: rgba(240, 128, 128, 0.705);
 
 }
 
@@ -206,7 +207,7 @@ label.light {
 }
 
 .number {
-  background-color: #5fcf80;
+  background-color: lightcoral;
   color: #fff;
   height: 35px;
   width: 35px;
