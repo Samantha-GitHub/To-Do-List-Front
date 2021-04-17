@@ -4,6 +4,7 @@ import { Chores } from 'src/app/interfaces/chores';
 import { User } from 'src/app/interfaces/user';
 import { UserService } from 'src/app/services/user.service';
 import { ChoresService } from 'src/app/services/chores.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 declare var Swal;
 
@@ -17,8 +18,9 @@ export class ChoresComponent implements OnInit {
   formChores: FormGroup;
   user: User;
   chores: Chores[];
+  chore: Chores;
 
-  constructor(private userService: UserService, private choreService: ChoresService,
+  constructor(private userService: UserService, private choreService: ChoresService, private activatedRoute: ActivatedRoute, private router: Router
   ) {
     this.formChores = new FormGroup({
 
@@ -78,6 +80,14 @@ export class ChoresComponent implements OnInit {
     /*    const deleteTask = this.choreService.deleteByIdToken(choreId);
        console.log(deleteTask); */
 
+
+  }
+
+  updateTask(choreId) {
+
+    console.log('this is choreId desde chores component', choreId);
+
+    this.router.navigate([`editTasks/${choreId}`]);
 
   }
   refresh(): void {

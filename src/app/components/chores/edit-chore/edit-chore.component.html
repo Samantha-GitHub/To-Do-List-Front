@@ -1,0 +1,61 @@
+<div id="page">
+
+    <div id="navbar">
+        <app-nav-bar></app-nav-bar>
+
+        <nav class="nav vertical">
+            <ul>
+                <li>
+                    <a [routerLink]="['/home']">
+                        <i class="left-menu-icon fas fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/profile']">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/myTasks']">
+                        <i class="left-menu-icon fas fa-bookmark"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+    </div>
+
+    <div class="container">
+
+        <body>
+
+            <form [formGroup]="editChore" (ngSubmit)="onSubmitEditChore()">
+
+                <fieldset>
+                    <legend><span class="number"><i class="fas fa-user-plus"></i></span>Update Your Task</legend>
+
+                    <label for="name">Title:</label>
+
+                    <input type="text" class="form-control " formControlName="title" placeholder="title">
+
+
+                    <label for="name">Detail:</label>
+
+                    <input type="text" class="form-control " formControlName="detail" placeholder="detail">
+
+
+                </fieldset>
+
+                <button type="submit">Save</button>
+            </form>
+
+        </body>
+
+    </div>
+
+    <div id="footer">
+        <app-footer></app-footer>
+    </div>
+</div>

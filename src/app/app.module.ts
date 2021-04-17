@@ -15,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CreateUserComponent } from './components/user/create-user/create-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditChoreComponent } from './components/chores/edit-chore/edit-chore.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     HomeComponent,
     CreateUserComponent,
+    EditChoreComponent,
   ],
   imports: [
     BrowserModule,

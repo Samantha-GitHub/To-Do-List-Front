@@ -40,11 +40,18 @@ export class ChoresService {
       .post(this.baseUrl, formValues, this.createHeaders())
       .toPromise();
   }
+  /* 
+    // UPDATE 
+    updateByIdToken(formValues): Promise<any> {
+      return this.httpClient
+        .put<any>(this.baseUrl, formValues, this.createHeaders())
+        .toPromise();
+    } */
 
   // UPDATE 
-  updateByIdToken(formValues): Promise<any> {
+  updateByIdToken(taskId, formValues): Promise<any> {
     return this.httpClient
-      .put<any>(this.baseUrl, formValues, this.createHeaders())
+      .put<any>(`${this.baseUrl}/${taskId}`, formValues, this.createHeaders())
       .toPromise();
   }
 
