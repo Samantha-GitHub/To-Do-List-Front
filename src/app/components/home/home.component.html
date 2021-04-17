@@ -63,21 +63,12 @@
                 <thead>
                     <th>Task Title</th>
                     <th>Task Detail</th>
-                    <th>Delete / Update</th>
 
                 </thead>
                 <tbody>
                     <tr *ngFor="let chores of choresById">
                         <td>{{chores.title}}</td>
                         <td>{{chores.detail}}</td>
-                        <td>
-                            <button class="button">
-                                <i class="fas fa-trash-alt delete"></i>
-                            </button>
-                            <button class="button">
-                                <i class="fas fa-check update"></i>
-                            </button>
-                        </td>
                     </tr>
 
                 </tbody>
