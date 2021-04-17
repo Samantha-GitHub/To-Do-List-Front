@@ -169,6 +169,9 @@ body {
         flex:5
       }
 
+        .icon{
+  display: none;
+}
         
 }
 
