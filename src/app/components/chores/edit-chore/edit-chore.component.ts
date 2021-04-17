@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Chores } from 'src/app/interfaces/chores';
 import { User } from 'src/app/interfaces/user';
 import { ChoresService } from 'src/app/services/chores.service';
@@ -18,7 +18,7 @@ export class EditChoreComponent implements OnInit {
   chores: Chores[];
   chore: Chores;
 
-  constructor(private userService: UserService, private choreService: ChoresService, private activatedRoute: ActivatedRoute) {
+  constructor(private userService: UserService, private choreService: ChoresService, private activatedRoute: ActivatedRoute, private router: Router) {
 
     this.editChore = new FormGroup({
 
@@ -56,6 +56,10 @@ export class EditChoreComponent implements OnInit {
   }
 
 
+  logOut() {
+    localStorage.removeItem('to-do-list');
+    this.router.navigate(['/hero']);
+  };
 
 
 }

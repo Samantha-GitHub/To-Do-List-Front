@@ -96,4 +96,10 @@ export class ChoresComponent implements OnInit {
   refresh(): void {
     window.location.reload();
   }
+
+
+  logOut() {
+    localStorage.removeItem('to-do-list');
+    this.router.navigate(['/hero']);
+  };
 }

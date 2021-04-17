@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Chores } from 'src/app/interfaces/chores';
 import { User } from 'src/app/interfaces/user';
 import { UserService } from 'src/app/services/user.service';
@@ -15,7 +16,7 @@ export class UserComponent implements OnInit {
   formUser: FormGroup;
   chores: Chores[];
 
-  constructor(private userService: UserService
+  constructor(private userService: UserService, private router: Router
 
   ) {
 
@@ -68,4 +69,10 @@ export class UserComponent implements OnInit {
   refresh(): void {
     window.location.reload();
   }
+
+
+  logOut() {
+    localStorage.removeItem('to-do-list');
+    this.router.navigate(['/hero']);
+  };
 }
