@@ -12,7 +12,7 @@ import { UserGuard } from './guards/user.guard';
 
 const routes: Routes = [
 
-  { path: "", pathMatch: 'full', redirectTo: 'home' },
+  { path: "", pathMatch: 'full', redirectTo: 'hero' },
   { path: 'home', component: HomeComponent, canActivate: [UserGuard] },
   { path: 'hero', component: HeroComponent },
   { path: 'login', component: LoginComponent },
