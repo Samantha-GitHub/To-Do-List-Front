@@ -32,10 +32,8 @@ export class LoginComponent implements OnInit {
       const response = await this.userService.login(this.loginForm.value);
       if (response['error']) {
         setTimeout(() => (this.errorMessage = response.error), 500);
-        /*  this.errorMessage = response.error; */
       } else {
         localStorage.setItem('to-do-list', response.token);
-        console.log(response.token);
 
         this.router.navigate(['/home']);
 

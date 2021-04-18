@@ -42,7 +42,6 @@ export class UserComponent implements OnInit {
     // Get info user by Id Token
     this.user = await this.userService.getById();
     this.chores = this.user.chores;
-    console.log('this is user', this.user);
 
     // FORM CONTENT
 
@@ -63,7 +62,6 @@ export class UserComponent implements OnInit {
       const user = await this.userService.updateById(
         this.formUser.value
       );
-      console.log(user);
 
     } catch (error) {
       console.log(error);
@@ -83,7 +81,6 @@ export class UserComponent implements OnInit {
       if (result.isConfirmed) {
 
         const deleteAccount = await this.userService.delete();
-        console.log(deleteAccount);
 
         Swal.fire('Deleted!', 'Your account has been deleted.', 'success');
 

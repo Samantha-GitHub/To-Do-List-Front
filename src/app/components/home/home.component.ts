@@ -34,7 +34,6 @@ export class HomeComponent implements OnInit {
     // Get info user by Id Token
     this.user = await this.userService.getById();
     this.choresById = this.user.chores;
-    console.log('this is user', this.user);
   }
 
   logOut() {

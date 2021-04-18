@@ -41,14 +41,12 @@ export class EditChoreComponent implements OnInit {
   async onSubmitEditChore(): Promise<any> {
 
     const id = this.activatedRoute.snapshot.paramMap.get('choreId');
-    console.log('log del params id', id);
 
     try {
 
       const chore = await this.choreService.updateByIdToken(
         id, this.editChore.value
       );
-      console.log(chore);
 
       this.router.navigate(['/myTasks']);
 

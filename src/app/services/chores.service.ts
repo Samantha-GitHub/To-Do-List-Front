@@ -52,7 +52,6 @@ export class ChoresService {
 
   // DELETE 
   deleteByIdToken(idChore): Promise<any> {
-    /* console.log('log del idChore', idChore); */
 
     return this.httpClient
       .delete<any>(`${this.baseUrl}/${idChore}`, this.createHeaders())

@@ -42,7 +42,6 @@ export class CreateUserComponent implements OnInit {
       const user = await this.userService.create(
         this.formUser.value
       );
-      console.log(user);
 
       // ROUTING TO FORM
       this.router.navigate(['/login']);

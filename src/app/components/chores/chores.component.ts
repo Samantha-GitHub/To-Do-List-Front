@@ -38,26 +38,13 @@ export class ChoresComponent implements OnInit {
     // Get info user by Id Token
     this.user = await this.userService.getById();
     this.chores = this.user.chores;
-    console.log('this is user', this.user);
   }
 
   async onSubmitChores(): Promise<any> {
 
-    /*  try {
- 
-       const chore = await this.choreService.create(
-         this.formChores.value
-       );
-       console.log(chore);
- 
-     } catch (error) {
-       console.log(error);
-     } */
-
     const chore = await this.choreService.create(
       this.formChores.value
     );
-    console.log(chore);
 
   }
 
@@ -75,7 +62,6 @@ export class ChoresComponent implements OnInit {
         const deleteTask = await this.choreService.deleteByIdToken(
           choreId
         );
-        console.log(deleteTask);
         Swal.fire('Deleted!', 'Your file has been deleted.', 'success');
 
         window.location.reload();
@@ -87,8 +73,6 @@ export class ChoresComponent implements OnInit {
   }
 
   updateTask(choreId) {
-
-    console.log('this is choreId desde chores component', choreId);
 
     this.router.navigate([`editTasks/${choreId}`]);
 
