@@ -110,6 +110,38 @@ body {
     ::-moz-placeholder { /* Firefox 19+ */ color: lightcoral; } 
 
     :-ms-input-placeholder { color: lightcoral; }
+
+
+ /* Footer */
+
+.footer{
+    color: lightcoral;
+    line-height:50px;
+    background:rgba(212, 161, 94, 0.589);;
+    text-align:center;
+    border-top: 2px solid lightcoral;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: lightseagreen;
+}
+
+.linkedin{
+
+   color: #094fe6;
+   margin-right: 5px;
+
+}
+
+.github{
+    color:#1a161a;
+}
+
+    /* End Footer */
     
     @media (max-width: 575px) {
         .main {
