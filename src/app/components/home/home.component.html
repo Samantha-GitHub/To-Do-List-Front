@@ -60,6 +60,10 @@
                     </tbody>
                 </table>
 
+                <pagination-controls class="pagination" (pageChange)="page = $event" responsive=" true"
+                    previousLabel="Previous" nextLabel="Next">
+                </pagination-controls>
+
             </div>
 
 
@@ -85,10 +89,6 @@
 
             </div>
 
-
-            <pagination-controls class="pagination" (pageChange)="page = $event" responsive=" true"
-                previousLabel="Previous" nextLabel="Next">
-            </pagination-controls>
             <div id="footer">
                 <app-footer></app-footer>
             </div>
