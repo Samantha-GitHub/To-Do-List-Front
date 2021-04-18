@@ -1,8 +1,7 @@
 *{
     color: white;
     line-height:50px;
-    background:black;
-    color:white;
+    background-color:rgba(0, 0, 0, 0.945);
     text-align:center;
 }
 
@@ -11,5 +10,23 @@ a{
 }
 
 a:hover{
-    color: lightseagreen;
+    color: skyblue;
 }
+
+.linkedin{
+
+    margin-right: 5px;
+
+}
+
+.linkedin:hover{
+
+    color: #094fe6 ;
+}
+
+.github:hover{
+
+    color:skyblue;
+}
+
+
