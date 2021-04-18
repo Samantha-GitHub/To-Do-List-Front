@@ -49,6 +49,8 @@ export class ChoresComponent implements OnInit {
     const chore = await this.choreService.create(
       this.formChores.value
     );
+    console.log(chore);
+
 
   }
 
