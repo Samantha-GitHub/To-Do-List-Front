@@ -115,7 +115,7 @@ body {
  /* Footer */
 
 .footer{
-    color: lightcoral;
+    color: black;
     line-height:50px;
     background:rgba(212, 161, 94, 0.589);;
     text-align:center;
@@ -128,6 +128,10 @@ a{
 
 a:hover{
     color: lightseagreen;
+}
+
+.black{
+    color: black;
 }
 
 .linkedin{
