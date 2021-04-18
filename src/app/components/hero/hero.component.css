@@ -144,3 +144,38 @@
   opacity: 1;
   right: 0;
 }
+
+ /* Footer */
+
+.footer{
+    color: black;
+    line-height:50px;
+    background:rgba(222, 184, 135, 0.555);
+    text-align:center;
+    border-top: 2px solid lightcoral;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: lightseagreen;
+}
+
+.black{
+  color: black;
+}
+
+.linkedin{
+
+   color: #094fe6;
+   margin-right: 5px;
+
+}
+
+.github{
+    color:#1a161a;
+}
+
+    /* End Footer */
