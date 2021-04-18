@@ -10,7 +10,7 @@ export class UserService {
   baseUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.baseUrl = 'https://to-do-list-nodejs-express.herokuapp.com//api/user';
+    this.baseUrl = 'https://to-do-list-nodejs-express.herokuapp.com/api/user';
 /*     this.baseUrl = 'http://localhost:3000/api/user';
  */  }
 
