@@ -27,6 +27,7 @@ body {
 .logo {
   font-size: 1.5em;
   color: lightcoral;
+  cursor: pointer;
 }
 
 .menu-container {
