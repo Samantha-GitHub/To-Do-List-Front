@@ -27,8 +27,12 @@ export class ChoresComponent implements OnInit {
   ) {
     this.formChores = new FormGroup({
 
-      title: new FormControl('', [Validators.required]),
-      detail: new FormControl('', [Validators.required]),
+      title: new FormControl('', [
+        Validators.required,
+        Validators.pattern(/^.{1,25}$/)]),
+      detail: new FormControl('', [
+        Validators.required,
+        Validators.pattern(/^.{1,50}$/)]),
 
     })
   }
