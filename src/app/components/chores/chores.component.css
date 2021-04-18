@@ -1,9 +1,9 @@
 #page {
   margin:0;
+  padding:0;
   height:100%;
    background-color: #ef626b25;
    position: relative;
-
 }
 
 #navbar {
@@ -14,7 +14,7 @@
 
 .container {
   width: 50%;
-  padding:50px 0 380px 0;
+  padding:50px 0;
   margin: 0 auto;
 }
 
@@ -32,6 +32,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  min-height: 100vh;
+  background-color: #EF626C;
+  color: #F6E8EA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
