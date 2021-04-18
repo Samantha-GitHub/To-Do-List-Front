@@ -60,6 +60,10 @@
                     </tbody>
                 </table>
 
+                <pagination-controls class="pagination" (pageChange)="page = $event" responsive=" true"
+                    previousLabel="Previous" nextLabel="Next">
+                </pagination-controls>
+
 
             </div>
 
@@ -76,7 +80,7 @@
 
                     </thead>
                     <tbody>
-                        <tr *ngFor="let chores of choresById | paginate: { itemsPerPage: 4, currentPage: page }">
+                        <tr *ngFor="let chores of choresById | paginate: { itemsPerPage: 2, currentPage: page }">
                             <td>{{chores.title}}</td>
                             <td>{{chores.detail}}</td>
                         </tr>
