@@ -50,7 +50,7 @@ export class ChoresComponent implements OnInit {
       this.formChores.value
     );
     console.log(chore);
-
+    window.location.reload();
 
   }
 
