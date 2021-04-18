@@ -52,7 +52,7 @@
                         <th>Task Detail</th>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let chore of chores | paginate: { itemsPerPage: 4, currentPage: page }">
+                        <tr *ngFor="let chore of chores | paginate: { itemsPerPage: 12, currentPage: page }">
                             <td>{{chore.title}}</td>
                             <td class="detail">{{chore.detail}}</td>
                         </tr>
@@ -68,7 +68,7 @@
 
 
 
-            <div class="myTasks">
+            <!-- <div class="myTasks">
 
                 <h1>My tasks published</h1>
 
@@ -87,7 +87,7 @@
                     </tbody>
                 </table>
 
-            </div>
+            </div> -->
 
             <div id="footer">
                 <app-footer></app-footer>
