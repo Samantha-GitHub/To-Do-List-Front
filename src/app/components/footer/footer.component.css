@@ -2,7 +2,6 @@
     color: white;
     line-height:50px;
     background:black;
-    color:white;
     text-align:center;
 }
 
@@ -13,3 +12,12 @@ a{
 a:hover{
     color: lightseagreen;
 }
+
+.linkedin{
+
+   color: #094fe6 !important;
+   margin-right: 5px;
+
+}
+
+
